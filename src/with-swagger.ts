@@ -34,7 +34,7 @@ export function createSwaggerSpec({
         version,
       },
     },
-    apis: [`${apiDirectory}/*.js`, `${apiDirectory}/*.ts`], // files containing annotations as above
+    apis: [`${apiDirectory}/**/*.js`, `${apiDirectory}/**/*.ts`], // files containing annotations as above
   };
 
   return swaggerJsdoc(options);
